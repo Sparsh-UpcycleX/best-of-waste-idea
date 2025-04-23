@@ -108,11 +108,70 @@ Slide 9: Future Improvements
 
 AI/ML integration for smarter material detection
 
-GPS tracking for waste transportation
-
 Integration with municipal waste systems
 
 Solar-powered system for energy efficiency
+
+
+HOW DOES IT WILL WORK 
+
+The **"Best of Waste"** smart waste sorter project is an automated system designed to efficiently categorize and manage different types of waste using a combination of sensors, actuators, and IoT integration. At the start of the process, waste items are placed onto a conveyor belt. The movement of the belt is triggered by a **proximity switch**, which detects when an object is nearby and activates the system. As the waste moves forward, an **infrared (IR) sensor** identifies the presence of an item and begins the classification process. A **raindrop sensor** is used to detect moisture content, which is particularly useful in distinguishing organic waste from dry materials like plastic or metal.
+
+Once the waste type is determined based on sensor inputs, a corresponding **servo motor** is activated to direct the waste into the appropriate bin—**metal**, **plastic**, or **organic**. These bins are not just simple containers; they are connected to additional conveyor belts that transport the sorted waste into designated **warehouse sections**. Inside each warehouse section, an **ultrasonic sensor** measures the fill level of the stored waste. These readings are transmitted in real-time to **Firebase**, a cloud-based database, using a **Wi-Fi module (such as ESP8266)** connected to the Arduino.
+
+The collected data on waste levels is then pulled from Firebase and displayed on a **custom-built website dashboard**. This dashboard provides a clear, user-friendly interface showing each bin's current fill level, the last update time, and alerts when bins approach capacity. This system not only automates waste sorting but also enables efficient monitoring and data-driven decision-making for waste management. In essence, "Best of Waste" brings together automation, smart sensing, and cloud technology to promote sustainable and hygienic waste handling practices.
+
+
+
+Start
+  │
+  ▼
+Waste enters via Conveyor Belt
+  │
+  ▼
+Waste reaches Main Bin (Processing Area)
+  │
+  ▼
+Passes through Sensors:
+  ├── Raindrop Sensor (moisture)
+  ├── IR Sensor (object detection)
+  ├── Proximity Switch (presence)
+  ├── NIR Sensor (material detection)
+  └── TCS34725 RGB Sensor (color detection)
+  │
+  ▼
+Waste Classification Logic (Plastic / Organic / Metallic)
+  │
+  ▼
+LCD Displays Type
+Buzzer gives Feedback
+  │
+  ▼
+Servo/Gate directs Waste to:
+  ├── Plastic Bin
+  ├── Organic Bin
+  └── Metallic Bin
+  │
+  ▼
+Sorted Waste Moves via Conveyor to Mini Warehouse
+  │
+  ▼
+Ultrasonic Sensor measures Bin Level
+  │
+  ▼
+ESP8266 sends Data to Firebase:
+  ├── Waste Type
+  ├── Bin Fill Level
+  ├── Timestamp (optional)
+  │
+  ▼
+Firebase Displays Data (App / Web Dashboard)
+  │
+  ▼
+END
+
+
+
 
 Slide 10: Conclusion
 
