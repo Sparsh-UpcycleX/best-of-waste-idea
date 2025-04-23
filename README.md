@@ -12,6 +12,7 @@ Subtitle: Automated Waste Segregation and Monitoring Solution
 
 Tagline: Transforming waste into opportunity with smart technology
 
+
 Slide 2: Problem Statement
 
 Improper waste segregation leads to environmental pollution and inefficient recycling.
@@ -19,6 +20,7 @@ Improper waste segregation leads to environmental pollution and inefficient recy
 Manual sorting is time-consuming, unhygienic, and prone to errors.
 
 Need for an automated, intelligent system to streamline the waste sorting process.
+
 
 Slide 3: Project Overview
 
@@ -29,6 +31,7 @@ Utilizes multiple sensors to detect waste type.
 Automatically sorts waste into three categories: Metal, Plastic, Organic.
 
 Tracks waste levels in storage warehouses and displays data online.
+
 
 Slide 4: System Components
 
@@ -50,6 +53,7 @@ Firebase: Real-time cloud database to store sensor data.
 
 Website Dashboard: Displays live data for monitoring and analytics.
 
+
 Slide 5: How It Works - Sorting Process
 
 Waste item is placed in the sorting bin.
@@ -63,6 +67,7 @@ Raindrop sensor checks moisture content to help distinguish organic waste.
 Based on sensor inputs, system categorizes waste.
 
 Stepper motors divert item into appropriate bin (metal, plastic, organic).
+
 
 Slide 6: How It Works - Storage & Monitoring
 
@@ -80,6 +85,7 @@ Time of last update
 
 Waste category levels
 
+
 Slide 7: Website Dashboard Features
 
 Real-time data visualization
@@ -92,6 +98,7 @@ Access from desktop or mobile
 
 Firebase backend for secure and scalable data handling
 
+
 Slide 8: Benefits of Our System
 
 Promotes hygiene and sustainability
@@ -103,6 +110,7 @@ Efficient recycling and waste tracking
 Scalable and IoT-enabled
 
 Real-time monitoring for better waste management
+
 
 Slide 9: Future Improvements
 
