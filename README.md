@@ -123,52 +123,52 @@ The collected data on waste levels is then pulled from Firebase and displayed on
 
 
 
-Start
-  │
-  ▼
-Waste enters via Conveyor Belt
-  │
-  ▼
-Waste reaches Main Bin (Processing Area)
-  │
-  ▼
-Passes through Sensors:
-  ├── Raindrop Sensor (moisture)
-  ├── IR Sensor (object detection)
-  ├── Proximity Switch (presence)
-  ├── NIR Sensor (material detection)
-  └── TCS34725 RGB Sensor (color detection)
-  │
-  ▼
-Waste Classification Logic (Plastic / Organic / Metallic)
-  │
-  ▼
-LCD Displays Type
-Buzzer gives Feedback
-  │
-  ▼
-Servo/Gate directs Waste to:
-  ├── Plastic Bin
-  ├── Organic Bin
-  └── Metallic Bin
-  │
-  ▼
-Sorted Waste Moves via Conveyor to Mini Warehouse
-  │
-  ▼
-Ultrasonic Sensor measures Bin Level
-  │
-  ▼
-ESP8266 sends Data to Firebase:
-  ├── Waste Type
-  ├── Bin Fill Level
-  ├── Timestamp (optional)
-  │
-  ▼
-Firebase Displays Data (App / Web Dashboard)
-  │
-  ▼
-END
+Start                                                                                                                                                                                                                                                  
+  │                                                                                                                                                                                                                                                  
+  ▼                                                                                                                                                                                                                                                  
+Waste enters via Conveyor Belt                                                                                                                                                                                                                                                  
+  │                                                                                                                                                                                                                                                  
+  ▼                                                                                                                                                                                                                                                  
+Waste reaches Main Bin (Processing Area)                                                                                                                                                                                                                                                  
+  │                                                                                                                                                                                                                                                  
+  ▼                                                                                                                                                                                                                                                                                                                                                                           
+Passes through Sensors:                                                                                                                                                                                                                                                  
+  ├── Raindrop Sensor (moisture)                                                                                                                                                                                                                                                                                                                                                                           
+  ├── IR Sensor (object detection)                                                                                                                                                                                                                                                                                                                                                                           
+  ├── Proximity Switch (presence)                                                                                                                                                                                                                                                                                                                                                                           
+  ├── NIR Sensor (material detection)                                                                                                                                                                                                                                                                                                                                                                           
+  └── TCS34725 RGB Sensor (color detection)                                                                                                                                                                                                                                                                                                                                                                               
+  │                                                                                                                                                                                                                                                  
+  ▼                                                                                                                                                                                                                                                  
+Waste Classification Logic (Plastic / Organic / Metallic)                                                                                                                                                                                                                                                                                                                                                                                            
+  │                                                                                                                                                                                                                                                  
+  ▼                                                                                                                                                                                                                                                  
+LCD Displays Type                                                                                                                                                                                                                                                  
+Buzzer gives Feedback                                                                                                                                                                                                                                                  
+  │                                                                                                                                                                                                                                                  
+  ▼                                                                                                                                                                                                                                                  
+Servo/Gate directs Waste to:                                                                                                                                                                                                                                                  
+  ├── Plastic Bin                                                                                                                                                                                                                                                  
+  ├── Organic Bin                                                                                                                                                                                                                                                  
+  └── Metallic Bin                                                                                                                                                                                                                                                  
+  │                                                                                                                                                                                                                                                  
+  ▼                                                                                                                                                                                                                                                  
+Sorted Waste Moves via Conveyor to Mini Warehouse                                                                                                                                                                                                                                                  
+  │                                                                                                                                                                                                                                                  
+  ▼                                                                                                                                                                                                                                                  
+Ultrasonic Sensor measures Bin Level                                                                                                                                                                                                                                                  
+  │                                                                                                                                                                                                                                                  
+  ▼                                                                                                                                                                                                                                                  
+ESP8266 sends Data to Firebase:                                                                                                                                                                                                                                                  
+  ├── Waste Type                                                                                                                                                                                                                                                  
+  ├── Bin Fill Level                                                                                                                                                                                                                                                  
+  ├── Timestamp (optional)                                                                                                                                                                                                                                                  
+  │                                                                                                                                                                                                                                                  
+  ▼                                                                                                                                                                                                                                                  
+Firebase Displays Data (App / Web Dashboard)                                                                                                                                                                                                                                                  
+  │                                                                                                                                                                                                                                                  
+  ▼                                                                                                                                                                                                                                                  
+END                                                                                                                                                                                                                                                  
 
 
 
