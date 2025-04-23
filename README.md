@@ -1,6 +1,6 @@
 # best-of-waste-idea
 
-good morning everyone this is team upcyclex
+Good Morning everyone, This is Team UpcycleX
 
 Title: Best of Waste - Smart Waste Sorter System
 
@@ -38,7 +38,7 @@ Proximity Switch: Triggers the start of the sorting process.
 
 Raindrop Sensor: Detects moisture level (used to help identify organic waste).
 
-Conveyor Belts: Transports waste through the sorting mechanism.
+Conveyor Belts: Transports waste from the sorting mechanism.
 
 Sorting Mechanism: Diverts waste into appropriate bins.
 
@@ -52,9 +52,9 @@ Website Dashboard: Displays live data for monitoring and analytics.
 
 Slide 5: How It Works - Sorting Process
 
-Waste item is placed on the conveyor.
+Waste item is placed in the sorting bin.
 
-Proximity switch activates the conveyor belt.
+Proximity switch activates the sorting bin.
 
 IR sensor detects presence and type of waste material.
 
@@ -62,7 +62,7 @@ Raindrop sensor checks moisture content to help distinguish organic waste.
 
 Based on sensor inputs, system categorizes waste.
 
-Servo motors divert item into appropriate bin (metal, plastic, organic).
+Stepper motors divert item into appropriate bin (metal, plastic, organic).
 
 Slide 6: How It Works - Storage & Monitoring
 
@@ -119,19 +119,19 @@ The **"Best of Waste"** smart waste sorter project is an automated system design
 
 Once the waste type is determined based on sensor inputs, a corresponding **servo motor** is activated to direct the waste into the appropriate bin—**metal**, **plastic**, or **organic**. These bins are not just simple containers; they are connected to additional conveyor belts that transport the sorted waste into designated **warehouse sections**. Inside each warehouse section, an **ultrasonic sensor** measures the fill level of the stored waste. These readings are transmitted in real-time to **Firebase**, a cloud-based database, using a **Wi-Fi module (such as ESP8266)** connected to the Arduino.
 
-The collected data on waste levels is then pulled from Firebase and displayed on a **custom-built website dashboard**. This dashboard provides a clear, user-friendly interface showing each bin's current fill level, the last update time, and alerts when bins approach capacity. This system not only automates waste sorting but also enables efficient monitoring and data-driven decision-making for waste management. In essence, "Best of Waste" brings together automation, smart sensing, and cloud technology to promote sustainable and hygienic waste handling practices.
+The collected data on waste levels is then pulled from Firebase and displayed on a **custom-built website dashboard**. This dashboard provides a clear, user-friendly interface showing each bin's current fill level, the last update time, and alerts when bins approach capacity. This system not only automates waste sorting but also enables efficient monitoring and data-driven decision-making for waste management. In essence, "Best of Waste" brings together automation, smart sensing, and cloud technology to promote sustainable and hygienic waste handling practices.It will work like this-
 
 
 
 Start                                                                                                                                                                                                                                                  
    │                                                                                                                                                                                                                                                  
-  ▼                                                                                                                                                                                                                                                  
+   ▼                                                                                                                                                                                                                                                  
 Waste enters via Conveyor Belt                                                                                                                                                                                                                                                  
    │                                                                                                                                                                                                                                                  
-  ▼                                                                                                                                                                                                                                                  
+   ▼                                                                                                                                                                                                                                                  
 Waste reaches Main Bin (Processing Area)                                                                                                                                                                                                                                                  
    │                                                                                                                                                                                                                                                  
-  ▼                                                                                                                                                                                                                                                                                                                                                                           
+   ▼                                                                                                                                                                                                                                                                                                                                                                           
 Passes through Sensors:                                                                                                                                                                                                                                                  
   ├── Raindrop Sensor (moisture)                                                                                                                                                                                                                                                                                                                                                                           
   ├── IR Sensor (object detection)                                                                                                                                                                                                                                                                                                                                                                           
@@ -139,36 +139,36 @@ Passes through Sensors:
   ├── NIR Sensor (material detection)                                                                                                                                                                                                                                                                                                                                                                           
   └── TCS34725 RGB Sensor (color detection)                                                                                                                                                                                                                                                                                                                                                                               
    │                                                                                                                                                                                                                                                  
-  ▼                                                                                                                                                                                                                                                  
+   ▼                                                                                                                                                                                                                                                  
 Waste Classification Logic (Plastic / Organic / Metallic)                                                                                                                                                                                                                                                                                                                                                                                            
    │                                                                                                                                                                                                                                                  
-  ▼                                                                                                                                                                                                                                                  
+   ▼                                                                                                                                                                                                                                                  
 LCD Displays Type                                                                                                                                                                                                                                                  
 Buzzer gives Feedback                                                                                                                                                                                                                                                  
    │                                                                                                                                                                                                                                                  
-  ▼                                                                                                                                                                                                                                                  
+   ▼                                                                                                                                                                                                                                                  
 Servo/Gate directs Waste to:                                                                                                                                                                                                                                                  
   ├── Plastic Bin                                                                                                                                                                                                                                                  
   ├── Organic Bin                                                                                                                                                                                                                                                  
   └── Metallic Bin                                                                                                                                                                                                                                                  
    │                                                                                                                                                                                                                                                  
-  ▼                                                                                                                                                                                                                                                  
+   ▼                                                                                                                                                                                                                                                  
 Sorted Waste Moves via Conveyor to Mini Warehouse                                                                                                                                                                                                                                                  
    │                                                                                                                                                                                                                                                  
-  ▼                                                                                                                                                                                                                                                  
+   ▼                                                                                                                                                                                                                                                  
 Ultrasonic Sensor measures Bin Level                                                                                                                                                                                                                                                  
    │                                                                                                                                                                                                                                                  
-  ▼                                                                                                                                                                                                                                                  
+   ▼                                                                                                                                                                                                                                                  
 ESP8266 sends Data to Firebase:                                                                                                                                                                                                                                                  
   ├── Waste Type                                                                                                                                                                                                                                                  
   ├── Bin Fill Level                                                                                                                                                                                                                                                  
   ├── Timestamp (optional)                                                                                                                                                                                                                                                  
    │                                                                                                                                                                                                                                                  
-  ▼                                                                                                                                                                                                                                                  
+   ▼                                                                                                                                                                                                                                                  
 Firebase Displays Data (App / Web Dashboard)                                                                                                                                                                                                                                                  
    │                                                                                                                                                                                                                                                  
-  ▼                                                                                                                                                                                                                                                  
-END                                                                                                                                                                                                                                                  
+   ▼                                                                                                                                                                                                                                                  
+  END                                                                                                                                                                                                                                                  
 
 
 
